@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Women's Clothing By Nazmul</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Popup Window</title>
+  <style>
+    /* Styling for the popup */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #ffffff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Popup content -->
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+  <p>Welcome to my website. Let's keep shopping.</p>
+  <button onclick="closePopup()">OK</button>
+</div>
+
+<script>
+  // Function to display the popup
+  function displayPopup() {
+    document.getElementById('overlay').style.display = 'block';
+    document.getElementById('popup').style.display = 'block';
+  }
+
+  // Function to close the popup
+  function closePopup() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('popup').style.display = 'none';
+  }
+
+  // Call the displayPopup function when the page loads
+  window.onload = function() {
+    displayPopup();
+  };
+</script>
+
+</body>
+</html>
+
+<body>
+	<div id="header">
+		<div>
+			<div id="logo">
+				<a href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+			</div>
+			<ul id="navigation">
+				<li class="selected">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="shop.html">The Shop</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div id="adbox">
+			<img src="images/summer-nymph.png" alt="Img">
+			<p>
+				Welcome to Women Clothing by Nazmul, where sophistication intertwines with style. Discover our curated collection of elegant attire, meticulously designed to celebrate the essence of femininity. From timeless classics to contemporary trends, indulge in fashion that embraces your unique grace and empowers your confidence. Experience the epitome of luxury and flair in every stitch at Women Clothing by Nazmul
+			</p>
+		</div>
+		<div id="featured">
+			<ul>
+				<li>
+					<a href="index.html"><img src="images/stare.jpg" alt="Img"></a>
+					<p>
+						Panjabi and Payjama
+					</p>
+				</li>
+				<li>
+					<a href="index.html"><img src="images/whisper.jpg" alt="Img"></a>
+					<p>
+						Sherwani
+					</p>
+				</li>
+				<li>
+					<a href="index.html"><img src="images/enjoy.jpg" alt="Img"></a>
+					<p>
+						Pagri
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="connect">
+			<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a><a href="http://www.freewebsitetemplates.com/misc/contact/" target="_blank" class="email"></a><a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a><a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+		</div>
+		<p>
+			Student Name: CHOWHDHURY NAZMUL ISLAM 
+			
+			Student ID: 23229531
+		</p>
+	</div>
+</body>
+</html>
